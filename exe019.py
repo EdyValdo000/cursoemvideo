@@ -1,4 +1,4 @@
-from random import choice, shuffle
+from random import choicey
 aluno1 = input('Nome do 1º aluno: ')
 aluno2 = input('Nome do 2º aluno: ')
 aluno3 = input('Nome do 3º aluno: ')

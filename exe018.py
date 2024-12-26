@@ -1,8 +1,9 @@
-from math import sin,cos,tan
+from math import sin,cos,tan,radians
 angle = int(input('Digite um algulo: '))
-seno = sin(angle)
-cosseno = cos(angle)
-tangente = tan(angle)
-print('O seno({}) = {}'.format(angle,seno))
-print('O cos({}) = {}'.format(angle,cosseno))
-print('A tg({}) = {}'.format(angle,tangente))
+angleRad = radians(angle)
+seno = sin(angleRad)
+cosseno = cos(angleRad)
+tangente = tan(angleRad)
+print('O seno({}) = {:.2f}'.format(angle,seno))
+print('O cos({}) = {:.2f}'.format(angle,cosseno))
+print('A tg({}) = {:.2f}'.format(angle,tangente))

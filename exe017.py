@@ -1,4 +1,5 @@
+from math import hypot
 co = float(input('Digite o valor do cateto oposto: '))
 ca = float(input('Digite o valor do cateto adjacente: '))
-h = pow(co,2) + pow(ca,2)
+h = hypot(co,ca)
 print('O valor da hipotenusa é {}'.format(h))
