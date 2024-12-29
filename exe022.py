@@ -1,5 +1,5 @@
 fullName = input('Qual é o seu nome?\n')
 print('Tudo mausculo: {}'.format(fullName.upper()))
 print('Tudo minusculo: {}'.format(fullName.lower()))
-print('O teu nome tem {} caracteres'.format(len(fullName.replace(' ',''))))
-print('O teu primeiro nome tem {} caracteres'.format(len(fullName.strip().split()[0])))
+print('O teu nome tem {} letras'.format(len(fullName.replace(' ',''))))
+print('O teu primeiro nome é {} tem {} letras'.format(fullName.split()[0],len(fullName.strip().split()[0])))
