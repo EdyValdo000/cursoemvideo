@@ -9,24 +9,12 @@ from datetime import date
 year = int(input('Digite o ano: '))
 if year == 0:
     year = date.today().year
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                print('O ano {} é bissexto.'.format(year))
-            else:
-                print('O ano {} não é bissexto.'.format(year))
-        else:
-            print('O ano {} é bissexto.'.format(year))
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        print('O ano {} \033[1;32mé bissexto.\033[m'.format(year))
     else:
-        print('O ano {} não é bissexto.'.format(year))
+        print('O ano {} \033[1;31mnão é bissexto.\033[m'.format(year))
 else:
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                print('O ano {} é bissexto.'.format(year))
-            else:
-                print('O ano {} não é bissexto.'.format(year))
-        else:
-            print('O ano {} é bissexto.'.format(year))
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        print('O ano {} \033[1;32mé bissexto.\033[m'.format(year))
     else:
-        print('O ano {} não é bissexto.'.format(year))
+        print('O ano {} \033[1;31mnão é bissexto.\033[m'.format(year))

@@ -5,7 +5,7 @@ dezena = (number // 10) % 10
 centena = (number // 100) % 10
 milhar = (number // 1000) % 10
 
-print('Unidade: {}'.format(unidade))
-print('Dezena: {}'.format(dezena))
-print('Centena: {}'.format(centena))
-print('Milhar: {}'.format(milhar))
+print('Unidade: \033[7;35;43m{}\033[m'.format(unidade))
+print('Dezena: \033[7;35;43m{}\033[m'.format(dezena))
+print('Centena: \033[7;35;43m{}\033[m'.format(centena))
+print('Milhar: \033[7;35;43m{}\033[m'.format(milhar))

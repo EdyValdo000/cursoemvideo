@@ -3,4 +3,4 @@ money = float(input('Quato dinheiro tens? '))
 refDol = 1.00
 refKz = 912.00
 dol = (money * refDol) / refKz
-print('Com {}kz tu podes comprar {:.2f}US'.format(money,dol))
+print('Com \033[1;31m{}\033[m\033[1;32mkz\033[m tu podes comprar \033[1;36m{:.2f}\033[m\033[1;32mUS\033[m'.format(money,dol))

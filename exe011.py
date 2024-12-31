@@ -5,4 +5,4 @@ refArea = 2
 refLitro = 1
 litro = (area * refLitro) / refArea
 
-print('Para pintar {} metros quadrados vais precisar de {}L de tinta'.format(area,litro))
+print('Para pintar \033[1;35m{}\033[m metros quadrados vais precisar de \033[1;36m{}L\033[m de tinta'.format(area,litro))
