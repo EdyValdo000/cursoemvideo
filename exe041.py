@@ -5,6 +5,7 @@ year = int(input('Digite sua data de nascimento para saber a sua categoria: '))
 yearsOld = dateToday.year - year
 
 print('A sua categoria é',end=' ')
+
 if yearsOld <= 9:
     print('\033[1;36mMIRIN\033[m',end=' ')
 elif 9 < yearsOld <= 14:
