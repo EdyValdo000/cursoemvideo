@@ -14,6 +14,7 @@ jogador['Total'] = totalGolos
 
 print(f'\n{jogador}\n')
 
-print(f'O {jogador['Nome']} marcou {totalGolos} golos\n')
+print(f'O {jogador['Nome']} teve um resultado\n')
 for i, v in enumerate(jogador['Golos']):
-    print(f'=>No jogo {i+1} marcou {v}')
+    print(f'    =>No jogo {i+1} marcou {v}')
+print(f'E marcou um total de {totalGolos} golos')
