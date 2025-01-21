@@ -1,5 +1,6 @@
 from time import sleep
 from random import randint
+from operator import itemgetter
 contador = 1
 
 pessoas = {
@@ -14,7 +15,7 @@ for k, v in pessoas.items():
     
 print('\nRanking dos jogadores\n')
 
-oragnizado = dict(sorted(pessoas.items(),  key=lambda item: item[1], reverse=True))
+oragnizado = dict(sorted(pessoas.items(),  key=itemgetter(1), reverse=True))
 for k, v in oragnizado.items():
     print(f'O {contador}º lugar foi {k} e teve {v}')
     contador += 1
