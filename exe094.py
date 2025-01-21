@@ -42,5 +42,8 @@ print(f'A média de idades é {média:.2f} anos')
 print(f'A lista das mulheres é {listMulheres}')
 print(f'Pessoas com idades maior que a média:')
 for c in range(0, len(pessoas)):
-   if pessoas[c]['Idade'] > média:
-       print(f'=» O {pessoas[c]['Nome']} com {pessoas[c]['Idade']} anos')
+    if pessoas[c]['Idade'] > média:
+        if  pessoas[c]['Sexo'] in 'Mm':
+            print(f'=» O {pessoas[c]['Nome']} com {pessoas[c]['Idade']} anos')
+        else:
+            print(f'=» A {pessoas[c]['Nome']} com {pessoas[c]['Idade']} anos')
