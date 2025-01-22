@@ -1,7 +1,9 @@
 def contagem (inicio, fim, passo):    
     sequência = list()
     print(f'='*55)
-    print(f'Contagem de {inicio} até {abs(fim)} de {abs(passo)} em {abs(passo)}\n')
+    if passo == 0:
+        passo = 1
+    print(f'Contagem de {inicio} até {abs(fim)} de {abs(passo)} em {abs(passo)}')
     if inicio < fim:
         for valor in range(inicio, fim+1, passo):
            sequência.append(valor) 
@@ -14,7 +16,7 @@ def contagem (inicio, fim, passo):
 
 
 contagem(1,10,1)
-contagem(10, 1, -1)
+contagem(10, 0, 2)
 inicio = int(input(f'Início: '))
 fim = int(input(f'Fim: '))
 passos = int(input(f'Passos: '))
