@@ -1,5 +1,8 @@
-# Calculo de factorial com uma função
 def factorial (número, show=False):
+    """
+    número é o valor que queres saber o factorial
+    show é uma variavel para escolheres se queres ver todos os números envolvidos no calculo do factorial de um número
+    """
     resultado = 1
     resposta = f'O factorial de {número} é... \n'
     for c in range(número, 0, -1):
@@ -13,4 +16,4 @@ def factorial (número, show=False):
         print(resposta,end=f' = {resultado}\n')
 
 factorial(5, True)
-factorial
+help(factorial)
