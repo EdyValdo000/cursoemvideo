@@ -13,11 +13,10 @@ def somaPar(lista,somar):
     números.sort()
     for index, valor in enumerate(números):
         print(f'{valor}',end=', ' if index != (len(números)-1) else '.\n')
-    print(f'A soma dos números pares é {somar}')
+    print(f'A soma dos números pares é {somar}.')
 
 
 números = list()
 soma = 0
-
 sortear(números)
 somaPar(números,soma)

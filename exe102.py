@@ -15,5 +15,4 @@ def factorial (número, show=False):
             resposta += (str(valor) + (' X ' if valor != 1 else ''))
         print(resposta,end=f' = {resultado}\n')
 
-factorial(5, True)
-help(factorial)
+factorial(5,True)
