@@ -3,12 +3,12 @@ def voto(anoDeNascimento):
     anoActual = date.today().year
     idade = anoActual-anoDeNascimento
     resposta = f'Tens {idade} e '    
-    if 65 > idade >= 18:
+    if 65 > idade > 18:
         resposta += 'o voto é \033[1;31mObrigatório\033[m'
-    elif 18 > idade:
-        resposta += 'tu \033[1;32mnão votas\033[m'
-    else:
+    elif 18 >= idade >= 16 or idade >= 65:
         resposta += 'o voto é \033[1;35mopcional\033[m'
+    else:
+        resposta += 'tu \033[1;32mnão votas\033[m'        
     
     return resposta
 
