@@ -1,5 +1,5 @@
-import moeda
-from formatacao import formatacao
+from ex107 import moeda
+from ex108 import formatacao
 
 número = float(input('Digite o preço: '))
 
