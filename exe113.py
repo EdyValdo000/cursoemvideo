@@ -37,3 +37,4 @@ def leituraFloat(mensagemDeEntrada='Digite um valor real'):
 númeroInt = leituraInt()
 númeroFloat = leituraFloat()
 print(f'O snúmeros que digitaste foram {númeroInt} e {númeroFloat}')
+
