@@ -1,6 +1,4 @@
-from ex107 import moeda 
+from ex110 import moeda 
 
 número = int(input('Digite um númreo: '))
-mais = 80
-menos = 25
-moeda.resumo(número,mais,menos)
+moeda.resumo(número,85,35)
