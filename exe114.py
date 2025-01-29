@@ -14,6 +14,6 @@ host = "google.com"
 port = 80
 
 if is_server_available(host, port):
-    print(f"\033[1;34mServidor {host}:{port} está disponível!\033[m")
+    print(f"\033[1;32mServidor {host}:{port} está disponível!\033[m")
 else:
     print(f"\033[1;31mServidor {host}:{port} não está acessível.\033[m")
